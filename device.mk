@@ -208,6 +208,20 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
+# Telephony packages we dont have ims here but we need those libs
+# to avoid crashes
+PRODUCT_PACKAGES += \
+    telephony-ext \
+    ims-ext-common \
+    services-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
+# IMS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager
+
 # Handheld hardware
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
