@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cygnus_violet.mk
+    $(LOCAL_DIR)/conquer_violet.mk
 
 COMMON_LUNCH_CHOICES := \
-    cygnus_violet-user \
-    cygnus_violet-userdebug \
-    cygnus_violet-eng
+    conquer_violet-user \
+    conquer_violet-userdebug \
+    conquer_violet-eng
