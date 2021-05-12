@@ -333,7 +333,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service
+    android.hardware.power-service-qti
 
 # Product characteristics
 PRODUCT_CHARACTERISTICS := nosdcard
