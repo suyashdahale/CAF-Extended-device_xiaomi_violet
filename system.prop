@@ -22,6 +22,9 @@ ro.com.google.ime.kb_pad_port_b=1
 
 # LMKD
 ro.config.low_ram=false
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=100
+ro.lmk.use_minfree_levels=true
 
 # Iorap
 iorapd.perfetto.enable=true
