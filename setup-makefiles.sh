@@ -42,6 +42,7 @@ write_headers "${DEVICE}"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
+write_makefiles "vendor/xiaomi/dolby/proprietary-files.txt" true
 
 # Finish
 write_footers

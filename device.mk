@@ -464,3 +464,6 @@ PRODUCT_COPY_FILES += \
 
 # Allow opting out of blurs
 TARGET_DISABLE_BLUR := true
+
+# MotoDolby
+$(call inherit-product, vendor/xiaomi/dolby/dolby.mk)
