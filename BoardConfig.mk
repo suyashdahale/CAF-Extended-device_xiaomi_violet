@@ -52,7 +52,6 @@ AUDIO_FEATURE_ENABLED_GEF_SUPPORT := true
 AUDIO_FEATURE_ENABLED_HDMI_SPK := true
 AUDIO_FEATURE_ENABLED_INSTANCE_ID := true
 AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
-AUDIO_FEATURE_ENABLED_DS2_DOLBY_DAP := true
 
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
@@ -94,9 +93,7 @@ LOC_HIDL_VERSION := 4.0
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/c2_manifest.xml
-DEVICE_MANIFEST_FILE += vendor/xiaomi/dolby/configs/hidl/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
-DEVICE_MATRIX_FILE += vendor/xiaomi/dolby/configs/hidl/compatibility_matrix.xml
 ODM_MANIFEST_FILES := $(DEVICE_PATH)/configs/hidl/manifest_odm.xml
 
 # Kernel
@@ -158,6 +155,7 @@ MSMSTEPPE := sm6150
 TARGET_BOARD_PLATFORM := sm6150
 
 # Power
+TARGET_TAP_TO_WAKE_NODE := "/proc/gesture/onoff"
 TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
 
 # Properties
@@ -178,7 +176,6 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # Releasetools
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_xiaomi
-TARGET_RELEASETOOLS_EXTENSIONS := device/xiaomi/violet-firmware
 # Security patch level
 VENDOR_SECURITY_PATCH := 2021-04-01
 
