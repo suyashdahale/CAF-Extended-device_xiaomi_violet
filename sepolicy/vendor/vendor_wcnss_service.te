@@ -1,0 +1,2 @@
+allow vendor_wcnss_service rootfs:dir { open  read };
+
